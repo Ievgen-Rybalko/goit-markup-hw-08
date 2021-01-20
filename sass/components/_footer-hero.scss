@@ -1,0 +1,28 @@
+.footer .footer-hero {
+  margin-right: 93px;
+}
+
+.footer-hero b {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-white-color;
+}
+
+.footer .ellipse {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $text-white-color;
+}
+
+.sotial-cards .list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .ellipse:hover,
+.footer .ellipse:focus {
+  background-color: $basic-blue-color;
+}

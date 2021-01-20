@@ -1,0 +1,34 @@
+.top-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.top-contacts > li + li {
+  margin-left: 50px;
+}
+
+.top-contacts a {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $basic-blue-color;
+  }
+
+  color: $text-common-light-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-contacts .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-contacts .svg-item {
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+}

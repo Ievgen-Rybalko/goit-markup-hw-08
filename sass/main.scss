@@ -1,0 +1,28 @@
+@import './utils/variables';
+@import './basic/my-normalization';
+@import './basic/body';
+
+@import './components/logo';
+@import './components/nav';
+@import './components/header-contacts';
+
+@import './components/hero-section';
+
+@import './components/backdrop-modal';
+@import './components/modal-forms';
+@import './components/form-checkbox';
+@import './components/form-button';
+
+@import './components/our-advantage-section';
+@import './components/what-we-do-section';
+
+@import './components/our-team-section';
+@import './components/sotials';
+@import './components/our-clients-section';
+
+@import './components/footer-contacts';
+@import './components/footer-hero';
+@import './components/footer-email-form';
+
+@import './components/portfolio';
+@import './components/portfolio-cards';

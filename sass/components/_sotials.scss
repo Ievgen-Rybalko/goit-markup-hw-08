@@ -1,0 +1,37 @@
+.ellipse .icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  fill: inherit;
+}
+
+.sotial-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sotial-cards .ellipse {
+  &:hover,
+  &:focus {
+    background-color: $basic-blue-color;
+    fill: $text-white-color;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $sotials-inactive-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sotial-cards .list-item:not(:last-child) {
+  margin-right: 10px;
+}

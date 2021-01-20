@@ -1,0 +1,37 @@
+.section .our-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.our-clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-clients .card-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid $sotials-inactive-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: $sotials-inactive-color;
+  transition: border-color 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $basic-blue-color;
+    border: 1px solid $basic-blue-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.our-clients.list .icon {
+  width: 60px;
+  height: 60px;
+}

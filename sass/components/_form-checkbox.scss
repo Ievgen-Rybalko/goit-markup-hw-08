@@ -1,0 +1,56 @@
+.form .checkbox {
+  margin-top: 144px;
+  padding-left: 52px;
+  padding-right: 51px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.03em;
+}
+
+.checkbox-label {
+  display: flex;
+  position: relative;
+}
+
+.checkbox-input {
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label .checkbox-text::before {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+
+  content: '';
+  border: 2px solid $background-dark-color;
+  border-radius: 2px;
+  fill: $text-white-color;
+}
+
+.checkbox-input:checked + .checkbox-text::before {
+  background-size: contain;
+  background-origin: border-box;
+  background-image: url(..//images/icons/icon-check.svg);
+  stroke: $text-white-color;
+  fill: $basic-blue-color;
+  background-color: $basic-blue-color;
+  border-color: $basic-blue-color;
+}
+
+.checkbox .conditions-link {
+  text-decoration: underline;
+  color: $basic-blue-color;
+}
