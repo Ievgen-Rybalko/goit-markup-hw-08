@@ -11,3 +11,12 @@ $sotials-inactive-color: #afb1b8;
 
 $basic-font: 'Roboto', sans-serif;
 $logo-font: 'Raleway', 'Oleo Script', cursive, sans-serif;
+
+// Breakpoints for adaptive
+$mobile: 480px;
+$mobile-1: $mobile - 1px;
+$tablet: 768px;
+$tablet-1: $tablet - 1px;
+$tablet1: $tablet + 1px;
+$desktop: 1200px;
+$desktop-1: $desktop - 1px;

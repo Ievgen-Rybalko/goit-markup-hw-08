@@ -1,7 +1,13 @@
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  @media screen and (max-width: $tablet-1) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
+
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 
   font-family: $logo-font;
   font-weight: 700;

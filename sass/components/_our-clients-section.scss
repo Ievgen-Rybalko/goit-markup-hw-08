@@ -1,10 +1,23 @@
 .section .our-clients {
   display: flex;
+  @media screen and (max-width: $tablet-1) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   justify-content: center;
 }
 
-.our-clients .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: $tablet-1) {
+  .our-clients .item {
+    margin: 15px;
+    width: calc ((100% - 2 * 30)/ 2);
+  }
+}
+//
+@media screen and (min-width: $desktop) {
+  .our-clients .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-clients .card-link {

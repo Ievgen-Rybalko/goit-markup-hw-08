@@ -1,10 +1,20 @@
 .top-contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (max-width: $mobile-1) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  // display: flex; // margin-left: auto;
 }
 
 .top-contacts > li + li {
-  margin-left: 50px;
+  @media screen and (max-width: $mobile-1) {
+    margin-top: 16px;
+  }
+
+  // margin-left: 50px;
 }
 
 .top-contacts a {
