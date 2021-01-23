@@ -6,7 +6,7 @@ body {
   color: $text-common-light-color;
   font-size: 14px;
   font-family: $basic-font;
-  width: $mobile-1;
+  width: 100%;
 }
 
 .header-main {
@@ -27,8 +27,12 @@ body {
 }
 
 .container {
+  // @media screen and (max-width: $tablet-1) {
+  //   width: $mobile;
+  // }
+
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   // @media screen and (min-width: $tablet) {

@@ -2,6 +2,14 @@
   margin-right: 40px;
 }
 
+@media screen and (max-width: $tablet-1) {
+  .footer .logo {
+    // margin-left: auto;
+    // margin-right: auto;
+    text-align: center;
+  }
+}
+
 .main-footer-contact-list > .item {
   margin-bottom: 10px;
 

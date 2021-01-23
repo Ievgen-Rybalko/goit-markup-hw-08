@@ -31,7 +31,7 @@ body {
   color: #757575;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  width: 479px;
+  width: 100%;
 }
 
 .header-main {
@@ -66,7 +66,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -273,6 +273,24 @@ body {
   padding-right: 0px;
 }
 
+@media screen and (min-width: 480px) {
+  .section.order-now {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section.order-now {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.order-now {
+    width: 768px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section.order-now {
     padding-bottom: 118px;
@@ -287,24 +305,25 @@ body {
 
 .order-now {
   background: #2f303a;
-  /* background: linear-gradient(#e66465 30%, #9198e5 90%); */
+  background-size: auto;
+  /*need to understand*/
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background: linear-gradient(#e66465 30%, #9198e5 90%); */
   text-align: center;
   letter-spacing: 0.06em;
 }
 
 @media screen and (max-width: 767px) {
   .order-now {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_background_hero_480.jpg);
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_background_hero_480.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_background_hero_480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_background_hero_480.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .order-now {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_background_hero_1600.jpg);
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_background_hero_1600.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img_background_hero_1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img_background_hero_1600.jpg);
   }
 }
 
@@ -855,7 +874,7 @@ button.order-now-button {
 @media screen and (max-width: 767px) {
   .our-clients .item {
     margin: 15px;
-    width: calc 20%;
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
@@ -876,7 +895,6 @@ button.order-now-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -901,6 +919,12 @@ button.order-now-button {
 
 .footer .basic-contacts {
   margin-right: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .logo {
+    text-align: center;
+  }
 }
 
 .main-footer-contact-list > .item {
@@ -958,7 +982,6 @@ button.order-now-button {
 }
 
 .send-mail .footer-input {
-  width: 358px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 14px;
@@ -975,6 +998,12 @@ button.order-now-button {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .send-mail .footer-input {
+    width: 358px;
+  }
 }
 
 .send-mail input.footer-input:not(:placeholder-shown) {
