@@ -10,12 +10,13 @@ body {
 }
 
 .header-main {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .header {
   @media screen and (min-width: $tablet) {
-    display: flex;
+    // display: flex;
   }
 
   align-items: center;
@@ -31,8 +32,16 @@ body {
   //   width: $mobile;
   // }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablet-1) {
     max-width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 
   // @media screen and (min-width: $tablet) {
@@ -50,7 +59,7 @@ body {
 }
 
 .section {
-  @media screen and (max-width: $tablet-1) {
+  @media screen and (max-width: $desktop-1) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -65,7 +74,10 @@ body {
   @media screen and (max-width: $tablet-1) {
     margin-bottom: 30px;
   }
-  //margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
 
   color: $text-headder-dark-color;
   font-weight: 700;
@@ -89,14 +101,9 @@ body {
 }
 
 .footer {
-  @media screen and (min-width: $tablet) {
+  align-items: baseline;
+
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
-
-  align-items: baseline;
-}
-
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
 }

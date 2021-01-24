@@ -17,33 +17,53 @@
         <header class="header-main">
             <div class="container header">
                 <nav class="nav">
+
                     <a class="logo" href="index.html">Web<span class="logo-accent">Studio</span></a>
                     <!-- Навигация по сайту -->
-                    <ul class="nav-main list">
-                        <li><a class="is-current" href="./index.html">Студия</a></li>
-                        <li><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
-                    </ul>
+                    
+                    <button class="menu-button is-open" type="button" data-menu-button>
+                        <svg class="icons"
+                        width="40"
+                        height="40"
+                        aria-label="Переключатель мобильного меню"
+                        aria-expanded="false"
+                        aria-controls="menu-container">
+                            <use class="icon-cross" href="./images/icons/sprite-header-menu.svg#close_icon"></use>
+                            <use class="icon-menu" href="./images/icons/sprite-header-menu.svg#menu_icon"></use>
+                        </svg>
+                    </button>
+
+                    <div class="menu-container is-open" id="menu-container" data-menu>
+
+                        <ul class="nav-main list">
+                            <li><a class="is-current" href="./index.html">Студия</a></li>
+                            <li><a href="./portfolio.html">Портфолио</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+
+                        <ul class="top-contacts">
+                            <li>
+                                <a class="link" href="tel:+380961111111">
+                                    <svg class="svg-item">
+                                        <use href="./images/icons/header-sprite.svg#header-envelope"></use>
+                                    </svg>
+                                    <p>+38096 111 11 11</p>
+                                </a>
+                            </li>
+                            <li> <a class="link" href="mailto:info@devstudio.com">
+                                    <svg class="svg-item">
+                                        <use href="./images/icons/header-sprite.svg#header-smartphone"></use>
+                                    </svg>
+                                    <p>info@devstudio.com</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </nav>
                 
                     <!-- Связаться со студией -->
-                <ul class="top-contacts container">
-                    <li>
-                        <a class="link" href="tel:+380961111111">
-                            <svg class="svg-item">
-                                <use href="./images/icons/header-sprite.svg#header-envelope"></use>
-                            </svg>
-                            <p>+38096 111 11 11</p>
-                        </a>
-                    </li>
-                    <li> <a class="link" href="mailto:info@devstudio.com">
-                            <svg class="svg-item">
-                                <use href="./images/icons/header-sprite.svg#header-smartphone"></use>
-                            </svg>
-                            <p>info@devstudio.com</p>
-                        </a>
-                    </li>
-                </ul>
+                
                 
             </div>
         </header>
@@ -134,7 +154,7 @@
                                         <source srcset="images/1IgorDemianenko_270.jpg" media="(min-width: 1200px)">
                                         <source srcset="images/1IgorDemianenko_354.jpg" media="(min-width: 768px)">
                                     
-                                       <!-- <img src="images/1IgorDemianenko_270.jpg" alt="Игорь Демьяненко"> -->
+                                        <img src="images/1IgorDemianenko_270.jpg" alt="Игорь Демьяненко">
                                     </picture>
                                     
 
@@ -372,57 +392,61 @@
         
         <footer class="main-footer">
             <div class="container footer">
-                <div class="basic-contacts">
-                    <a class="logo" href="index.html">Web<span class="logo-accent logo-inverse">Studio</span></a>
-                    <address>
-                        <ul class="main-footer-contact-list">
-                            <li class="item"><a class="map" id="contacts" target="_blank"
-                                    href="https://www.google.com.ua/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4264989,30.5390882,17.5z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=en&authuser=0">г. Киев,
-                                    пр-т Леси Украинки, 26</a></li>
-                            <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        
+
+                <div class="contacts-list">
+                    <div class="basic-contacts">
+                        <a class="logo" href="index.html">Web<span class="logo-accent logo-inverse">Studio</span></a>
+                        <address>
+                            <ul class="main-footer-contact-list">
+                                <li class="item"><a class="map" id="contacts" target="_blank"
+                                        href="https://www.google.com.ua/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4264989,30.5390882,17.5z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=en&authuser=0">г.
+                                        Киев,
+                                        пр-т Леси Украинки, 26</a></li>
+                                <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    
+                            </ul>
+                        </address>
+                    
+                    </div>
+                    <div class="footer-hero">
+                        <b>Присоединяйтесь</b>
+                        <ul class="sotial-cards list footer">
+                            <li class="list-item">
+                                <a class="ellipse" href="#">
+                                    <svg class="icon">
+                                        <use href="./images/icons/sotials.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="ellipse" href="#">
+                                    <svg class="icon">
+                                        <use href="./images/icons/sotials.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="ellipse" href="#">
+                                    <svg class="icon">
+                                        <use href="./images/icons/sotials.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="ellipse" href="#">
+                                    <svg class="icon">
+                                        <use href="./images/icons/sotials.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                    </address>
-        
+                    </div>
                 </div>
-                <div class="footer-hero">
-                    <b>Присоединяйтесь</b>
-                    <ul class="sotial-cards list footer">
-                        <li class="list-item">
-                            <a class="ellipse" href="#">
-                                <svg class="icon">
-                                    <use href="./images/icons/sotials.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a class="ellipse" href="#">
-                                <svg class="icon">
-                                    <use href="./images/icons/sotials.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a class="ellipse" href="#">
-                                <svg class="icon">
-                                    <use href="./images/icons/sotials.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a class="ellipse" href="#">
-                                <svg class="icon">
-                                    <use href="./images/icons/sotials.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <form class="footer-form">
-                        <b>Подпишитесь на рассылку</b>
-                        <div class="send-mail">
+                
+                <form class="footer-form">
+                    <b>Подпишитесь на рассылку</b>
+                    <div class="send-mail">
                             <input class="footer-input" type="email" name="foot-mail" placeholder="E-mail" />
                             <button class="footer-button" type="submit">
                                 <b>Подписаться</b>
@@ -430,9 +454,9 @@
                                     <use href="./images/icons/sprite-forms.svg#icon-send"></use>
                                 </svg>
                             </button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+                
 
             </div>
         </footer>
@@ -498,5 +522,6 @@
 
         
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

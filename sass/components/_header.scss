@@ -1,0 +1,218 @@
+.nav {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+
+  @media screen and (max-width: $tablet-1) {
+    justify-content: space-between;
+  }
+
+  // @media screen and (min-width: $desktop) {
+  //   justify-content: space-between;
+  // }
+}
+
+.nav-main {
+  // display: none;
+  @media screen and (max-width: $tablet-1) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  // @media screen and (min-width: $desktop) {
+  //   margin-right: 0x;
+  // }
+
+  & li {
+    @media screen and (max-width: $tablet-1) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.nav-main > li + li {
+  @media screen and (min-width: $tablet) {
+    margin-left: 50px;
+  }
+}
+
+//.nav-main li {
+//}
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (max-width: $tablet-1) {
+    & .icons {
+      display: block;
+    }
+
+    &.is-open .icon-cross {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+
+    & .icon-cross {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+    position: absolute;
+  }
+}
+
+.menu-container {
+  background-color: #fff;
+
+  @media screen and (max-width: $tablet-1) {
+    &.is-open {
+      display: block;
+    }
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    border-top: 1px solid #ececec;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-main.list a {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $basic-blue-color;
+  }
+
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  color: $text-headder-dark-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.nav-main.list .is-current {
+  position: relative;
+  color: $basic-blue-color;
+
+  &::after {
+    /* Pseudoelement */
+    display: block;
+    position: absolute;
+    width: 100%;
+
+    transform: translateY(4px);
+    height: 4px;
+    content: '';
+
+    background: $basic-blue-color;
+    border: 0px solid invisible;
+    border-radius: 2px;
+    @media screen and (max-width: $tablet-1) {
+      top: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+      top: 249%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 90%;
+    }
+  }
+}
+
+.top-contacts {
+  // display: none;
+  @media screen and (max-width: $tablet-1) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 285px;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    //margin-left: auto;
+    //margin-right: 0;
+  }
+}
+
+.top-contacts > li + li {
+  @media screen and (max-width: $tablet-1) {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+}
+
+.top-contacts a {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $basic-blue-color;
+  }
+
+  color: $text-common-light-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-contacts .link {
+  @media screen and (max-width: $tablet-1) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.top-contacts .svg-item {
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+}

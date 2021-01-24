@@ -53,7 +53,9 @@
 
 /* placement for advantage cards */
 .our-advantages.list {
-  // display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .our-advantages.list .item {

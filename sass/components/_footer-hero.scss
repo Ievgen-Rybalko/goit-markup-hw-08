@@ -1,5 +1,15 @@
 .footer .footer-hero {
-  margin-right: 93px;
+  @media screen and (max-width: $tablet-1) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .footer-hero b {

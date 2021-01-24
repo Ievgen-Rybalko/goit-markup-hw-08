@@ -3,7 +3,9 @@
 }
 
 .our-team-list {
-  // display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .our-team-list picture {

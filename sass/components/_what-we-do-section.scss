@@ -1,12 +1,12 @@
 .what-we-do {
-  @media screen and (max-width: $tablet-1) {
+  @media screen and (max-width: $desktop-1) {
     display: none;
   }
   background-color: $background-main-color;
 }
 
 .what-we-do-list {
-  // display: flex;
+  display: flex;
 
   &img {
     display: block;
