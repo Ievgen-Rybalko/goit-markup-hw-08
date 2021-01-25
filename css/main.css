@@ -448,35 +448,23 @@ img {
   padding-right: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .section.order-now {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section.order-now {
-    padding-bottom: 118px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section.order-now {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .section.order-now {
     padding-bottom: 118px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section.order-now {
+    padding-bottom: 118px;
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section.order-now {
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
@@ -1532,8 +1520,8 @@ button.order-now-button {
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   overflow: hidden;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1584,7 +1572,6 @@ button.order-now-button {
 .portfolio-cards .img-item {
   position: relative;
   overflow: hidden;
-  width: 370px;
 }
 
 .portfolio-cards .item-text {

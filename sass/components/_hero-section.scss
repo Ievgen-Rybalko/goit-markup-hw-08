@@ -4,25 +4,24 @@
   // }
 
   @media screen and (min-width: $mobile) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 118px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   @media screen and (max-width: $tablet-1) {
     padding-bottom: 118px;
   }
 
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 118px;
+    max-width: 768px;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-bottom: 200px;
+    max-width: 1600px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
   margin-left: auto;
