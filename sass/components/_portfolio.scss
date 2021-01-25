@@ -7,9 +7,15 @@
 }
 
 .portfolio-nav {
-  // display: flex;
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: $tablet-1) {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+  }
 }
 
 .portfolio-nav .filter-item:not(:last-child) {
@@ -31,6 +37,7 @@
   height: 38px;
   padding-left: 22px;
   padding-right: 22px;
+  margin-bottom: 15px;
 
   color: $text-headder-dark-color;
   font-weight: 500;
