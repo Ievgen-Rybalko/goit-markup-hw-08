@@ -249,6 +249,13 @@ img {
   .menu-button .icon-cross {
     display: none;
   }
+  .menu-button .icons {
+    fill: #000000;
+  }
+  .menu-button:hover .icons,
+  .menu-button:focus .icons {
+    fill: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1596,7 +1603,7 @@ button.order-now-button {
 }
 
 .portfolio-cards:nth-child(2) h2 {
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .item-text p {

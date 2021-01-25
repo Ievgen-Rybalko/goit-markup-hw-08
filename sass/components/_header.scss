@@ -66,6 +66,15 @@
     & .icon-cross {
       display: none;
     }
+
+    .icons {
+      fill: #000000;
+    }
+
+    &:hover .icons,
+    &:focus .icons {
+      fill: $basic-blue-color;
+    }
   }
 
   @media screen and (min-width: $tablet) {
